@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjetoFitness.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="CenturyFont">
+                <On Platform="Android" Value="Century Gothic.ttf#Century Gothic"/>
+                
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="CenturyItalicFont">
+                <On Platform="Android" Value="GOTHICI.ttf#GOTHICI"/>
+
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="CenturyBoldFont">
+                <On Platform="Android" Value="GOTHICB0.ttf#GOTHICB0"/>
+
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="KeepCalmFont">
+                <On Platform="Android" Value="KeepCalm-Medium.ttf#KeepCalm - Medium"/>
+
+            </OnPlatform>
+        </ResourceDictionary>
+
+        <Style x:Key="GreenButton" TargetType="Button">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="BorderRadius" Value="45"/>
+            <Setter Property="BackgroundColor" Value="#1ED760"/>
+        </Style>
+
+        <Style x:Key="InvisibleButton" TargetType="Button">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="HorizontalOptions" Value="End"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+
+        </Style>
+
+        <Style x:Key="TransparentButton" TargetType="Button">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="BorderColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="BorderRadius" Value="45"/>
+
+
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property = "Scale"
+                        Value="1" />
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState x:Name="Pressed">
+                            <VisualState.Setters>
+                                <Setter Property = "BorderWidth" Value="3" />
+                                <Setter Property="FontSize" Value="18.5"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+
+    </Application.Resources>
+</Application>

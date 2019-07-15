@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundImageSource="usado.jfif"
+             x:Class="ProjetoFitness.Pages.Login.SiginPage"
+             Visual="Material"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             Title="SiginToPage">
+    <ContentPage.Content>
+        <StackLayout Padding="40" Spacing="5">
+
+            <Image 
+                Source="VetorStickMan.png" 
+                Scale="0.5" 
+                VerticalOptions="Start"/>
+            <Label 
+                Text="Email" 
+                TextColor="#000000" 
+                FontSize="16" 
+                FontFamily="{StaticResource KeepCalmFont}"/>
+            <Entry 
+                Placeholder="youremail@example.com"  
+                PlaceholderColor="Gray" 
+                FontFamily="{StaticResource CenturyItalicFont}"  
+                FontSize="16"   />
+            <Label 
+                Text="Senha" 
+                TextColor="#000000" 
+                FontSize="16" 
+                FontFamily="{StaticResource KeepCalmFont}"/>
+            <Entry 
+                Placeholder="********"  
+                PlaceholderColor="Gray" 
+                FontFamily="{StaticResource CenturyItalicFont}"  
+                FontSize="16" 
+                BackgroundColor="Transparent" 
+                IsPassword="True"/>
+            <Label 
+                Text="Confirmar senha" 
+                TextColor="#000000" 
+                FontSize="16" 
+                FontFamily="{StaticResource KeepCalmFont}"/>
+            <Entry 
+                Placeholder="********"  
+                PlaceholderColor="Gray" 
+                FontFamily="{StaticResource CenturyItalicFont}"  
+                FontSize="16" 
+                IsPassword="True"/>
+            <Button  
+                Text="Já sou cadastrado" 
+                android:Button.UseDefaultPadding="True"
+                Style="{StaticResource InvisibleButton}"/>
+
+
+            <Label Text="" TextColor="White"/>
+            <Label Text=""/>
+            <Button 
+                Text="Cadastrar" 
+                Style="{StaticResource GreenButton}"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

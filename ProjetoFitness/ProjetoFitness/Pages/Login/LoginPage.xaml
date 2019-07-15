@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundImageSource="usado.jfif"
+             x:Class="ProjetoFitness.Pages.Login.LoginPage"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             Title="LoginPage">
+    <ContentPage.Content>
+        <StackLayout Padding="40" Spacing="5">
+            <Image Source="VetorStickMan.png" Scale="0.5" VerticalOptions="Start"/>
+            <Grid Grid.Row="3" Padding="0,10,0,0">
+                <Grid>
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="287" />
+
+                    </Grid.ColumnDefinitions>
+                    <Image 
+                        Source="email.png" 
+                        Grid.Row="0" 
+                        HeightRequest="20" 
+                        WidthRequest="20" 
+                        HorizontalOptions="Start"/>
+                    <Entry 
+                        HorizontalOptions="Fill"  
+                        Grid.Column="1" 
+                        Placeholder="youremail@example.com"  
+                        PlaceholderColor="Gray" 
+                        FontFamily="{StaticResource CenturyItalicFont}"  
+                        FontSize="16"   />
+                    <Image 
+                        Source="senha.png" 
+                        Grid.Row="2" HeightRequest="17" 
+                        WidthRequest="17" 
+                        HorizontalOptions="Start" />
+                    <Entry 
+                        Placeholder="********" 
+                           Grid.Row="2" 
+                           Grid.Column="1" 
+                           PlaceholderColor="Gray" 
+                           FontFamily="{StaticResource CenturyItalicFont}"  
+                           FontSize="16" 
+                           BackgroundColor="Transparent" 
+                           IsPassword="True"/>
+                </Grid>
+            </Grid>
+
+
+            <Button  
+                Text="Esqueceu a senha?" 
+                android:Button.UseDefaultPadding="True"
+                Style="{StaticResource InvisibleButton}"/>
+
+
+
+            <Label 
+                Text="" 
+                TextColor="White"/>
+            <Label 
+                Text=""/>
+            <Button 
+                Text="Entrar" Clicked="CadastrarCliente" Style="{StaticResource GreenButton}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
